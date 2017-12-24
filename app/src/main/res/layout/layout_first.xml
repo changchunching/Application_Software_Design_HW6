@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_first_linearout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/firstlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/first_add"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="新增" />
+
+            <EditText
+                android:id="@+id/first_edit"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/first_del"
+                android:layout_width="80sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="刪除" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -21,11 +21,49 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main">
         <!--app:menu="@menu/activity_main_drawer"/>-->
-        <ListView
-            android:id="@+id/nav_custom_listview"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="85sp" />
+            android:layout_marginTop="85sp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ListView
+                android:id="@+id/nav_custom_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/nav_add_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:layout_weight="1"
+                    android:hapticFeedbackEnabled="true"
+                    android:text="新增" />
+
+                <EditText
+                    android:id="@+id/nav_edit"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/nav_del_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="刪除" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </android.support.design.widget.NavigationView>
 

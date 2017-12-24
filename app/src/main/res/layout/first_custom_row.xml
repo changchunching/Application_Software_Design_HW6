@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5sp"
+    android:layout_marginTop="5sp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_weight="0.13"
+            app:srcCompat="@drawable/product" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.23"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品名稱" />
+
+            <TextView
+                android:id="@+id/product_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品描述" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="商品價格" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buy"
+            android:layout_width="50sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_weight="0.18"
+            android:text="Buy" />
+    </LinearLayout>
+</LinearLayout>

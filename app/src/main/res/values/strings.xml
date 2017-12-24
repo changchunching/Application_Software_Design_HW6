@@ -7,17 +7,17 @@
     <string name="action_settings">Settings</string>
 
     <string-array name="social">
-        <item>店家A</item>
-        <item>店家B</item>
-        <item>店家C</item>
-        <item>店家D</item>
-        <item>店家E</item>
-        <item>店家F</item>
-        <item>店家G</item>
-        <item>店家H</item>
-        <item>店家I</item>
-        <item>店家J</item>
-        <item>店家K</item>
-        <item>店家L</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
     </string-array>
 </resources>
