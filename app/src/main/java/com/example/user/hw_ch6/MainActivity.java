@@ -173,6 +173,7 @@ public class MainActivity extends AppCompatActivity{
                 });
                 dialog.show();
             }
+            
             else{
                 Toast.makeText(getApplicationContext(),"請先選擇店家",Toast.LENGTH_SHORT).show();
             }
